@@ -1,0 +1,99 @@
+{
+	"code": 0
+	,
+	"msg": ""
+	,
+	"count": 300
+	,
+	"data": [
+		{
+			"id": "10001"
+			,
+			"name": "Java从入门到入土"
+			,
+			"describe": "好书"
+			,
+			"prices": "35.2",
+			"stock": "5675",
+			"images": "img/1.jpg"
+			
+		}, {
+			"id": "10001"
+			,
+			"name": "Python从入门到入土"
+			,
+			"describe": "好书"
+			,
+			"prices": "38.2",
+			"stock": "567",
+			"images": "img/2.jpg"
+			
+		}, {
+			"id": "10001"
+			,
+			"name": "c从入门到入土"
+			,
+			"describe": "好书"
+			,
+			"prices": "38.7",
+			"stock": "666",
+			"images": "img/3.jpg"
+			
+		}, {
+			"id": "10001"
+			,
+			"name": "c++从入门到入土"
+			,
+			"describe": "好书"
+			,
+			"prices": "345.2",
+			"stock": "976",
+			"images": "img/3.jpg"
+			
+		}, {
+			"id": "10001"
+			,
+			"name": "go从入门到入土"
+			,
+			"describe": "好书"
+			,
+			"prices": "375.2",
+			"stock": "676",
+			"images": "img/3.jpg"
+			
+		}, {
+			"id": "10001"
+			,
+			"name": "php从入门到入土"
+			,
+			"describe": "好书"
+			,
+			"prices": "37.24",
+			"stock": "65",
+			"images": "img/3.jpg"
+			
+		}, {
+			"id": "10001"
+			,
+			"name": "Giao从入门到入土"
+			,
+			"describe": "好书"
+			,
+			"prices": "35.6",
+			"stock": "2342",
+			"images": "img/3.jpg"
+			
+		}, {
+			"id": "10001"
+			,
+			"name": "c#从入门到入土"
+			,
+			"describe": "好书"
+			,
+			"prices": "30.0",
+			"stock": "324",
+			"images": "img/3.jpg"
+			
+		}
+	]
+}

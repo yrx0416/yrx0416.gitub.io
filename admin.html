@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>台商品管理系统</title>
+  <link rel="stylesheet" href="./layui/css/layui.css">
+  <script type="text/javascript">
+  	function change(type){
+  		document.getElementById("demoAdmin").setAttribute("src",type+".html")
+  		}
+  	
+  		
+  	
+  </script>
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo ">后台商品管理系统</div>
+    <!-- 头部区域（可配合layui 已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left">
+      <!-- 移动端显示 -->
+      <li class="layui-nav-item layui-show-xs-inline-block layui-hide-sm" lay-header-event="menuLeft">
+        <i class="layui-icon layui-icon-spread-left"></i>
+      </li>
+      
+      <li class="layui-nav-item layui-hide-xs"><a href="">控制台</a></li>
+      <li class="layui-nav-item layui-hide-xs"><a href="">商品管理</a></li>
+      <li class="layui-nav-item layui-hide-xs"><a href="">用户</a></li>
+      <li class="layui-nav-item">
+        <a href="javascript:;">其它系统</a>
+        <dl class="layui-nav-child">
+          <dd><a href="">服务诊断</a></dd>
+          <dd><a href="">升级系统</a></dd>
+          <dd><a href="">测试后台</a></dd>
+        </dl>
+      </li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item layui-hide layui-show-md-inline-block">
+        <a href="javascript:;">
+          <img src="//tva1.sinaimg.cn/crop.0.0.118.118.180/5db11ff4gw1e77d3nqrv8j203b03cweg.jpg" class="layui-nav-img">
+          tester
+        </a>
+        <dl class="layui-nav-child">
+          <dd><a href="">Your Profile</a></dd>
+          <dd><a href="">Settings</a></dd>
+          <dd><a href="">Sign out</a></dd>
+        </dl>
+      </li>
+      <li class="layui-nav-item"><a href="">退出</a>
+      </li>
+    </ul>
+  </div>
+  
+  <div class="layui-side layui-bg-black">
+    <div class="layui-side-scroll">
+      <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+      <ul class="layui-nav layui-nav-tree" lay-filter="test">
+        <li class="layui-nav-item ">
+          <a class="" href="javascript:;">商品管理</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;" onclick="change('table')">商品信息</a></dd>
+          </dl>
+        </li>
+        <li class="layui-nav-item" ><a href="">商品查询</a></li>
+        <li class="layui-nav-item"><a href="javascript:;" onclick="change('add')">添加商品</a></li>
+        <li class="layui-nav-item">
+          <a href="javascript:;">数据分析</a>
+          <dl class="layui-nav-child">
+            <dd><a href="javascript:;" onclick="change('bar')">树状图</a></dd>
+            <dd><a href="javascript:;" onclick="change('pie')">扇形图</a></dd>  
+          </dl>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+  
+  <div class="layui-body">
+    <!-- 内容主体区域 -->
+    <div style="padding: 15px;">
+    	<iframe src="add.html" frameborder="0" id="demoAdmin" style="width: 100%" height="650"></iframe>
+    </div>
+  </div>
+  
+  <div class="layui-footer">
+    <!-- 底部固定区域 -->
+    底部固定区域
+  </div>
+</div>
+ <script src="layui/layui.js" charset="utf-8"></script>
+<script>
+//JS 
+layui.use('element', function(){
+	var element = layui.element;
+  
+});
+</script>
+</body>
+</html>
